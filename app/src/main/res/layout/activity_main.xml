@@ -7,6 +7,7 @@
     tools:context="com.snehpandya.ultimateandroid.MainActivity">
 
     <TextView
+        android:id="@+id/textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
@@ -16,4 +17,12 @@
         android:textAlignment="center"
         android:textColor="#000"
         android:textSize="40sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:src="@mipmap/ic_launcher_round"/>
 </RelativeLayout>
