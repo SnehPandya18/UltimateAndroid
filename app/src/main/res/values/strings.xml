@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Ultimate Android</string>
     <string name="hello">Hello there!</string>
+    <string name="hey">HEY</string>
 </resources>
