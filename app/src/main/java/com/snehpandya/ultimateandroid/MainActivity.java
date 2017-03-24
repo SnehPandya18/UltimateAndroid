@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,5 +32,10 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Hey!", Toast.LENGTH_SHORT).show();
             }
         });
+
+        EditText editText = (EditText) findViewById(R.id.edittext);
+
+        TextView textView = (TextView) findViewById(R.id.textname);
+        textView.setText(editText.getText().toString());
     }
 }
