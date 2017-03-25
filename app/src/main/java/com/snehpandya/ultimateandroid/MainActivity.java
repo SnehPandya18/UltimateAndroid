@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,26 +15,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView text = (TextView) findViewById(R.id.textview);
-        text.setOnClickListener(new View.OnClickListener() {
+        Button button1 = (Button) findViewById(R.id.button1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText editText = (EditText) findViewById(R.id.edittext);
+                String eText = editText.getText().toString();
+                Toast.makeText(MainActivity.this, "Hey " + eText + "!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Button button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, ImageActivity.class);
                 startActivity(i);
             }
         });
-
-        Button button = (Button) findViewById(R.id.button1);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Hey!", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        EditText editText = (EditText) findViewById(R.id.edittext);
-
-        TextView textView = (TextView) findViewById(R.id.textname);
-        textView.setText(editText.getText().toString());
     }
 }
