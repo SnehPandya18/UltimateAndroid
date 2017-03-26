@@ -7,40 +7,10 @@
     tools:context="com.snehpandya.ultimateandroid.MainActivity">
 
     <TextView
-        android:id="@+id/textview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:padding="8dp"
-        android:text="@string/welcome"
-        android:textAlignment="center"
-        android:textColor="#000"
-        android:textSize="20sp"/>
+        android:id="@+id/widgets"
+        style="@style/CategoryStyle"
+        android:background="#0db175"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hello" />
 
-    <EditText
-        android:id="@+id/edittext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textview"
-        android:layout_margin="8dp"
-        android:hint="@string/name"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/edittext"
-        android:layout_margin="8dp">
-
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/toast"/>
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/image"/>
-    </LinearLayout>
 </RelativeLayout>

@@ -18,10 +18,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity" />
+            android:name=".MainActivity"/>
         <activity
             android:name=".ImageActivity"
             android:label="@string/app_name"
+            android:parentActivityName=".WidgetsActivity"/>
+        <activity
+            android:name=".WidgetsActivity"
+            android:label="@string/widgets"
             android:parentActivityName=".MainActivity"/>
     </application>
 </manifest>
