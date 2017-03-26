@@ -11,6 +11,6 @@
         style="@style/CategoryStyle"
         android:background="#0db175"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Hello" />
+        android:text="@string/widgets" />
 
 </RelativeLayout>
