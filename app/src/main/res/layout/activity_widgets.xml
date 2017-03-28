@@ -26,11 +26,12 @@
         android:hint="@string/name"/>
 
     <LinearLayout
+        android:id="@+id/buttons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/edittext"
         android:layout_margin="8dp"
-        android:weightSum="2">
+        android:weightSum="3">
 
         <Button
             android:id="@+id/button1"
@@ -45,5 +46,23 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/image"/>
+
+        <Button
+            android:onClick="showText()"
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/submit"/>
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/showTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttons"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:textColor="#000000"
+        android:textSize="20sp"/>
 </RelativeLayout>
