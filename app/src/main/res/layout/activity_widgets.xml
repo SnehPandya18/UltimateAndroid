@@ -22,15 +22,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/textview"
-        android:layout_margin="8dp"
+        android:layout_margin="16dp"
         android:hint="@string/name"/>
+
+    <RadioGroup
+        android:id="@+id/radio"
+        style="@style/RadioGroupStyle"
+        android:layout_below="@id/edittext">
+
+        <RadioButton
+            android:id="@+id/male"
+            style="@style/RadioButtonStyle"
+            android:text="@string/male"/>
+
+        <RadioButton
+            android:id="@+id/female"
+            style="@style/RadioButtonStyle"
+            android:text="@string/female"/>
+    </RadioGroup>
 
     <LinearLayout
         android:id="@+id/buttons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edittext"
-        android:layout_margin="8dp"
+        android:layout_below="@id/radio"
+        android:layout_margin="16dp"
         android:weightSum="3">
 
         <Button
@@ -48,11 +64,11 @@
             android:text="@string/image"/>
 
         <Button
-            android:onClick="showText()"
             android:id="@+id/submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="submit"
             android:text="@string/submit"/>
     </LinearLayout>
 
@@ -62,7 +78,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/buttons"
         android:layout_margin="16dp"
-        android:padding="16dp"
         android:textColor="#000000"
         android:textSize="20sp"/>
 </RelativeLayout>
