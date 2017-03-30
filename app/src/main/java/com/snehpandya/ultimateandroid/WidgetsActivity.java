@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -50,8 +51,11 @@ public class WidgetsActivity extends AppCompatActivity {
         RadioButton female = (RadioButton) findViewById(R.id.female);
         boolean gender2 = female.isChecked();
 
+        CheckBox checkBox = (CheckBox) findViewById(R.id.coffeecheckbox);
+        boolean coffeeCheckBox = checkBox.isChecked();
+
         int calculate = calculateAnswer(gender1, gender2);
-        String calculateSummary = createSummary(eText, calculate);
+        String calculateSummary = createSummary(eText, calculate, coffeeCheckBox);
         displayMessage(calculateSummary);
     }
 
@@ -67,13 +71,18 @@ public class WidgetsActivity extends AppCompatActivity {
         return gender;
     }
 
-    public String createSummary(String name, int calculate) {
+    public String createSummary(String name, int calculate, boolean checkbox) {
         String messageIn = "Hello " + name + "!";
         if (calculate == 1) {
             messageIn += "\nYour gender is male.";
         } else if (calculate == 2) {
             messageIn += "\nYour gender is female.";
         }
+
+        if (checkbox) {
+            messageIn += "\nYou like coffee!";
+        }
+
         return messageIn;
     }
 
