@@ -2,18 +2,21 @@ package com.snehpandya.ultimateandroid;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class WidgetsActivity extends AppCompatActivity {
 
     String message;
+    private RelativeLayout mRelativeLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +29,9 @@ public class WidgetsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 EditText editText = (EditText) findViewById(R.id.edittext);
                 String eText = editText.getText().toString();
-                Toast.makeText(WidgetsActivity.this, "Hey " + eText + "!", Toast.LENGTH_SHORT).show();
+
+                mRelativeLayout = (RelativeLayout) findViewById(R.id.relative);
+                Snackbar.make(mRelativeLayout, "Hello " + eText + "!", Snackbar.LENGTH_SHORT).show();
             }
         });
 
@@ -92,6 +97,7 @@ public class WidgetsActivity extends AppCompatActivity {
         if (t != null) {
             t.setText(message);
         } else {
+            mRelativeLayout = (RelativeLayout) findViewById(R.id.relative);
             Toast.makeText(this, "Error!", Toast.LENGTH_SHORT).show();
         }
     }
