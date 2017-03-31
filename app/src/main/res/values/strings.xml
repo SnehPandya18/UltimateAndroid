@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Ultimate Android</string>
     <string name="hello">Show Image!</string>
-    <string name="toast">TOAST</string>
+    <string name="snackbar">SNACKBAR</string>
     <string name="image">IMAGE</string>
     <string name="name">Name</string>
     <string name="welcome">Welcome!</string>
