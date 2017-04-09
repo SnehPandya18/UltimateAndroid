@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="com.snehpandya.ultimateandroid.MainActivity">
 
     <TextView
         android:id="@+id/widgets"
+        android:padding="24dp"
         style="@style/CategoryStyle"
         android:background="#0db175"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/widgets" />
-
-</RelativeLayout>
+</ScrollView>
