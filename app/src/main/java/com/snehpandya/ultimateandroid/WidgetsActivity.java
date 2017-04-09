@@ -2,6 +2,7 @@ package com.snehpandya.ultimateandroid;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -41,6 +42,15 @@ public class WidgetsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(WidgetsActivity.this, ImageActivity.class);
                 startActivity(i);
+            }
+        });
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "This is FloatingActionButton", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
     }
