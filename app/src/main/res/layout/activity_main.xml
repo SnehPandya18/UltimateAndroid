@@ -6,11 +6,25 @@
     android:layout_height="wrap_content"
     tools:context="com.snehpandya.ultimateandroid.MainActivity">
 
-    <TextView
-        android:id="@+id/widgets"
-        android:padding="24dp"
-        style="@style/CategoryStyle"
-        android:background="#0db175"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/widgets" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/widgets"
+            style="@style/CategoryStyle"
+            android:background="#0db175"
+            android:padding="24dp"
+            android:text="@string/widgets"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:id="@+id/webview"
+            style="@style/CategoryStyle"
+            android:background="@color/colorAccent"
+            android:padding="24dp"
+            android:text="@string/webview"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </LinearLayout>
 </ScrollView>
