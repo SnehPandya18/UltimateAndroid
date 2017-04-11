@@ -16,6 +16,5 @@ public class WebViewActivity extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("https://github.com/snehpandya18");
-
     }
 }
