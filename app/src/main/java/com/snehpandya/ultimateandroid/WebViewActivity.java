@@ -14,7 +14,6 @@ public class WebViewActivity extends AppCompatActivity {
 
         final WebView webView = (WebView) findViewById(R.id.web_view);
         webView.setWebViewClient(new WebViewClient());
-        webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl("https://github.com/snehpandya18");
     }
 }
