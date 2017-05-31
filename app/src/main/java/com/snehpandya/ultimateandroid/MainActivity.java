@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent widgetsIntent = new Intent(MainActivity.this, WidgetsActivity.class);
                 startActivity(widgetsIntent);
-                finish();
             }
         });
 
@@ -35,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent webviewIntent = new Intent(MainActivity.this, WebViewActivity.class);
                 startActivity(webviewIntent);
-                finish();
             }
         });
 
@@ -45,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent networkIntent = new Intent(MainActivity.this, NetworkActivity.class);
                 startActivity(networkIntent);
-                finish();
             }
         });
     }
