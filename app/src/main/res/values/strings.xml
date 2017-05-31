@@ -12,4 +12,5 @@
     <string name="about">About</string>
     <string name="coffee">I like coffee</string>
     <string name="webview">WebView</string>
+    <string name="network">Network</string>
 </resources>

@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent widgetsIntent = new Intent(MainActivity.this, WidgetsActivity.class);
                 startActivity(widgetsIntent);
+                finish();
             }
         });
 
@@ -34,6 +35,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent webviewIntent = new Intent(MainActivity.this, WebViewActivity.class);
                 startActivity(webviewIntent);
+                finish();
+            }
+        });
+
+        TextView network = (TextView) findViewById(R.id.network);
+        network.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent networkIntent = new Intent(MainActivity.this, NetworkActivity.class);
+                startActivity(networkIntent);
+                finish();
             }
         });
     }

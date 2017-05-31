@@ -26,5 +26,13 @@
             android:padding="24dp"
             android:text="@string/webview"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:id="@+id/network"
+            style="@style/CategoryStyle"
+            android:background="@color/colorPrimaryDark"
+            android:padding="24dp"
+            android:text="@string/network"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
     </LinearLayout>
 </ScrollView>
