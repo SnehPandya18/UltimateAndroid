@@ -14,7 +14,7 @@
         <TextView
             android:id="@+id/widgets"
             style="@style/CategoryStyle"
-            android:background="#0db175"
+            android:background="@color/color1"
             android:padding="24dp"
             android:text="@string/widgets"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
@@ -22,7 +22,7 @@
         <TextView
             android:id="@+id/webview"
             style="@style/CategoryStyle"
-            android:background="@color/colorAccent"
+            android:background="@color/color2"
             android:padding="24dp"
             android:text="@string/webview"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
@@ -30,7 +30,7 @@
         <TextView
             android:id="@+id/network"
             style="@style/CategoryStyle"
-            android:background="@color/colorPrimaryDark"
+            android:background="@color/color3"
             android:padding="24dp"
             android:text="@string/network"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
