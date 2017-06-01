@@ -1,21 +1,26 @@
 language: android
 sudo: required
 jdk: oraclejdk8
+os:
+    - linux
 
 android:
   components:
     - tools
-    - tools
+    - build-tools-25.0.2
     - platform-tools
-    - build-tools-21.0.2
-    - android-24
-    - android-22
-    - extra-google-m2repository
     - extra-android-m2repository
-    - extra-android-support
-    - addon-google_apis-google-25
-    - sys-img-armeabi-v7a-android-22
+    - extra-google-android-support
+
+    - android-16
+    - android-21
+    - android-22
+    - android-25
+
+    - sys-img-armeabi-v7a-android-16
     - sys-img-armeabi-v7a-android-21
+    - sys-img-armeabi-v7a-android-22
+    - sys-img-armeabi-v7a-android-25
 
   licenses:
     - android-sdk-preview-license-.+
