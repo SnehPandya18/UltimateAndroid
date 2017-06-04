@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import static android.os.BatteryManager.EXTRA_TECHNOLOGY;
+
 public class BatteryActivity extends AppCompatActivity {
 
     TextView batteryInfo;
@@ -31,7 +33,7 @@ public class BatteryActivity extends AppCompatActivity {
             int plugged = intent.getIntExtra(BatteryManager.EXTRA_PLUGGED,0);
             boolean present = intent.getExtras().getBoolean(BatteryManager.EXTRA_PRESENT);
             int status = intent.getIntExtra(BatteryManager.EXTRA_STATUS,0);
-            String technology = intent.getExtras().getString(BatteryManager.EXTRA_TECHNOLOGY);
+            String technology = intent.getExtras().getString(EXTRA_TECHNOLOGY);
             int temperature = intent.getIntExtra(BatteryManager.EXTRA_TEMPERATURE,0);
             int voltage = intent.getIntExtra(BatteryManager.EXTRA_VOLTAGE,0);
 
