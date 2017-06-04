@@ -13,4 +13,5 @@
     <string name="coffee">I like coffee</string>
     <string name="webview">WebView</string>
     <string name="network">Network</string>
+    <string name="battery_status">Battery Status</string>
 </resources>

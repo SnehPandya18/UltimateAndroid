@@ -34,5 +34,13 @@
             android:padding="24dp"
             android:text="@string/network"
             android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:id="@+id/battery"
+            style="@style/CategoryStyle"
+            android:background="@color/color4"
+            android:padding="24dp"
+            android:text="@string/battery_status"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
     </LinearLayout>
 </ScrollView>

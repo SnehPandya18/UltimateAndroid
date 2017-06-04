@@ -45,6 +45,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(networkIntent);
             }
         });
+
+        TextView battery = (TextView) findViewById(R.id.battery);
+        battery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent batteryIntent = new Intent(MainActivity.this, BatteryActivity.class);
+                startActivity(batteryIntent);
+            }
+        });
     }
 
     @Override
