@@ -17,4 +17,5 @@
     <string name="listview">ListViews</string>
     <string name="custom_listview">Custom ListView</string>
     <string name="simple_listview">Simple ListView</string>
+    <string name="image_listview">Custom ListView with Images</string>
 </resources>

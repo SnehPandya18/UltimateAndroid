@@ -1,10 +1,12 @@
 package com.snehpandya.ultimateandroid;
 
 import android.app.Activity;
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -16,12 +18,14 @@ public class ListViewAdapter extends BaseAdapter {
     Activity context;
     String title[];
     String description[];
+    LayoutInflater mLayoutInflater;
 
     public ListViewAdapter(Activity context, String[] title, String[] description) {
         super();
         this.context = context;
         this.title = title;
         this.description = description;
+        this.mLayoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
@@ -40,6 +44,7 @@ public class ListViewAdapter extends BaseAdapter {
     }
 
     private class ViewHolder {
+        ImageView imageView;
         TextView textViewTitle;
         TextView textViewDescription;
     }
@@ -47,11 +52,12 @@ public class ListViewAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder;
-        LayoutInflater layoutInflater = context.getLayoutInflater();
 
         if(convertView == null) {
-            convertView = layoutInflater.inflate(R.layout.list_item, null);
             viewHolder = new ViewHolder();
+            convertView = mLayoutInflater.inflate(R.layout.list_item, null);
+
+            viewHolder.imageView = (ImageView) convertView.findViewById(R.id.imageview);
             viewHolder.textViewTitle = (TextView) convertView.findViewById(R.id.textview1);
             viewHolder.textViewDescription = (TextView) convertView.findViewById(R.id.textview2);
             convertView.setTag(viewHolder);
@@ -59,6 +65,7 @@ public class ListViewAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
+        viewHolder.imageView.setImageResource(R.drawable.image);
         viewHolder.textViewTitle.setText(title[position]);
         viewHolder.textViewDescription.setText(description[position]);
 
