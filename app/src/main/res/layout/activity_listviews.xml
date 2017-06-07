@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.snehpandya.ultimateandroid.ListViewsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/listview"
+            style="@style/CategoryStyle"
+            android:background="@color/color1"
+            android:padding="24dp"
+            android:text="@string/simple_listview"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:id="@+id/customlistview"
+            style="@style/CategoryStyle"
+            android:background="@color/color2"
+            android:padding="24dp"
+            android:text="@string/custom_listview"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    </LinearLayout>
+</ScrollView>

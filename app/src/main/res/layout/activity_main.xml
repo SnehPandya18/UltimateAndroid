@@ -36,7 +36,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"/>
 
         <TextView
-            android:id="@+id/listview"
+            android:id="@+id/listviews"
             style="@style/CategoryStyle"
             android:background="@color/color4"
             android:padding="24dp"

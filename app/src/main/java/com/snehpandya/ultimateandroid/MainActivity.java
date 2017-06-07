@@ -3,15 +3,11 @@ package com.snehpandya.ultimateandroid;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.view.menu.MenuView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
-import static com.snehpandya.ultimateandroid.R.id.battery;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -47,12 +43,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView listview = (TextView) findViewById(R.id.listview);
-        listview.setOnClickListener(new View.OnClickListener() {
+        TextView listviews = (TextView) findViewById(R.id.listviews);
+        listviews.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent listviewIntent = new Intent(MainActivity.this, ListViewActivity.class);
-                startActivity(listviewIntent);
+                Intent listviewsIntent = new Intent(MainActivity.this, ListViewsActivity.class);
+                startActivity(listviewsIntent);
             }
         });
 

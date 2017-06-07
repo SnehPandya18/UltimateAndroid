@@ -39,9 +39,17 @@
             android:label="@string/network"
             android:parentActivityName=".MainActivity"/>
         <activity
-            android:name=".ListViewActivity"
+            android:name=".ListViewsActivity"
             android:label="@string/listview"
             android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ListViewActivity"
+            android:label="@string/listview"
+            android:parentActivityName=".ListViewsActivity"/>
+        <activity
+            android:name=".CustomListView"
+            android:label="@string/custom_listview"
+            android:parentActivityName=".ListViewsActivity"/>
         <activity
             android:name=".BatteryActivity"
             android:label="@string/battery_status"
