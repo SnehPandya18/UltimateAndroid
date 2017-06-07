@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <TextView
@@ -36,9 +36,17 @@
             android:textAppearance="?android:attr/textAppearanceLarge"/>
 
         <TextView
-            android:id="@+id/battery"
+            android:id="@+id/listview"
             style="@style/CategoryStyle"
             android:background="@color/color4"
+            android:padding="24dp"
+            android:text="@string/listview"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <TextView
+            android:id="@+id/battery"
+            style="@style/CategoryStyle"
+            android:background="@color/color5"
             android:padding="24dp"
             android:text="@string/battery_status"
             android:textAppearance="?android:attr/textAppearanceLarge"/>

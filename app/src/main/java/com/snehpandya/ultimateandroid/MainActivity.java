@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
+import static com.snehpandya.ultimateandroid.R.id.battery;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +44,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent networkIntent = new Intent(MainActivity.this, NetworkActivity.class);
                 startActivity(networkIntent);
+            }
+        });
+
+        TextView listview = (TextView) findViewById(R.id.listview);
+        listview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent listviewIntent = new Intent(MainActivity.this, ListViewActivity.class);
+                startActivity(listviewIntent);
             }
         });
 
